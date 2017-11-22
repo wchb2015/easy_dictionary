@@ -19,4 +19,4 @@ mkdir -p "$PROJECT_DIR/tmp/"
 mkdir -p "$LOG_DIR/gc_logs/"
 
 echo start application!!!!!
-nohup java -server $MEM_OPTS $GC_OPTS   $START_OPTS  -jar ../../dictionary-0.0.1-SNAPSHOT.jar &
+nohup java -server $MEM_OPTS $GC_OPTS   $START_OPTS  -jar ../../../../target/dictionary-0.0.1-SNAPSHOT.jar &
