@@ -1,5 +1,9 @@
 package com.wchb.dictionary.constants;
 
+
+import lombok.Getter;
+
+@Getter
 public enum WordClassEnum {
 
     Noun("n", "名词", 1),
@@ -22,27 +26,4 @@ public enum WordClassEnum {
         this.code = code;
     }
 
-    public String getAbbreviation() {
-        return abbreviation;
-    }
-
-    public void setAbbreviation(String abbreviation) {
-        this.abbreviation = abbreviation;
-    }
-
-    public String getCnName() {
-        return cnName;
-    }
-
-    public void setCnName(String cnName) {
-        this.cnName = cnName;
-    }
-
-    public Integer getCode() {
-        return code;
-    }
-
-    public void setCode(Integer code) {
-        this.code = code;
-    }
 }

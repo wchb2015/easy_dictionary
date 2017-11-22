@@ -1,7 +1,13 @@
 package com.wchb.dictionary.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.validator.constraints.NotBlank;
 
+@Getter
+@Setter
+@ToString
 public class User {
 
     private Long id;
@@ -43,45 +49,4 @@ public class User {
         return this;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getMobile() {
-        return mobile;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", email='" + email + '\'' +
-                ", mobile='" + mobile + '\'' +
-                '}';
-    }
 }

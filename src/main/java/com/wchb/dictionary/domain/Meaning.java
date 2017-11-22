@@ -4,7 +4,11 @@ package com.wchb.dictionary.domain;
 import com.alibaba.fastjson.annotation.JSONField;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.wchb.dictionary.constants.WordClassEnum;
+import lombok.Getter;
+import lombok.ToString;
 
+@ToString
+@Getter
 @JsonPropertyOrder(value = {"wordClass", "english", "example", "chinese"})
 public class Meaning {
 
@@ -47,29 +51,4 @@ public class Meaning {
         return this;
     }
 
-    @Override
-    public String toString() {
-        return "Meaning{" +
-                "wordClass=" + wordClass +
-                ", english='" + english + '\'' +
-                ", chinese='" + chinese + '\'' +
-                ", example='" + example + '\'' +
-                '}';
-    }
-
-    public WordClassEnum getWordClass() {
-        return wordClass;
-    }
-
-    public String getEnglish() {
-        return english;
-    }
-
-    public String getChinese() {
-        return chinese;
-    }
-
-    public String getExample() {
-        return example;
-    }
 }

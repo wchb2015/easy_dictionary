@@ -1,5 +1,13 @@
 package com.wchb.dictionary.domain;
 
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
 public class QueryConditions {
 
     private Long userId;
@@ -16,7 +24,4 @@ public class QueryConditions {
         return new QueryConditions();
     }
 
-    public Long getUserId() {
-        return userId;
-    }
 }

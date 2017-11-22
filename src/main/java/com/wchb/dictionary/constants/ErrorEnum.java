@@ -1,9 +1,11 @@
 package com.wchb.dictionary.constants;
 
+import lombok.Getter;
 
+@Getter
 public enum ErrorEnum {
 
-    UNKNOW(-1, "未知错误"),
+    UNKNOWN(-1, "未知错误"),
     NO_USERNAME(1, "用户名不能为空!");
 
     private Integer code;
@@ -15,12 +17,5 @@ public enum ErrorEnum {
         this.msg = msg;
     }
 
-    public Integer getCode() {
-        return code;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
 
 }

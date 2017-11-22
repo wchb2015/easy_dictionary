@@ -1,6 +1,5 @@
 package com.wchb.dictionary.controller;
 
-
 import com.wchb.dictionary.constants.ErrorEnum;
 import com.wchb.dictionary.domain.HttpResult;
 import com.wchb.dictionary.domain.User;

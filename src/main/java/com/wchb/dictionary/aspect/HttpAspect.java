@@ -14,9 +14,6 @@ import javax.servlet.http.HttpServletRequest;
 @Component
 public class HttpAspect {
 
-    /**
-     * 用sl4j, 底层实现是logback
-     */
     private final static Logger LOG = LoggerFactory.getLogger(HttpAspect.class);
 
     @Pointcut("execution(public * com.wchb.dictionary.controller.*.*(..))")

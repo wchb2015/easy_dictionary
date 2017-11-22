@@ -1,9 +1,15 @@
 package com.wchb.dictionary.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.util.Collection;
 import java.util.Collections;
 
+@Getter
+@Setter
+@ToString
 public class PageData<T> {
 
     private Long count;
@@ -20,19 +26,4 @@ public class PageData<T> {
         this.list = list;
     }
 
-    public Long getCount() {
-        return count;
-    }
-
-    public void setCount(Long count) {
-        this.count = count;
-    }
-
-    public Collection<T> getList() {
-        return list;
-    }
-
-    public void setList(Collection<T> list) {
-        this.list = list;
-    }
 }
