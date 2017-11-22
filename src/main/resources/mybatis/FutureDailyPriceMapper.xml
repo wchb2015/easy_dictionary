@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wchb.dictionary.mapper.FutureDailyPriceDao">
+
+    <insert id="insertFutureDailyPrice" parameterType="com.wchb.dictionary.domain.dto.FutureDailyPriceDTO"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO finance.future_daily_price
+        (contract_name,date,opening_price,closing_price,the_highest_price,the_lowest_price,
+        average_price,oc_spread,hl_spread, open_interest,volume,contract_code)
+        VALUES
+        (#{contractName},#{date},#{openingPrice},#{closingPrice},#{theHighestPrice},#{theLowestPrice},
+        #{averagePrice},#{ocSpread},#{hlSpread},#{openInterest},#{volume},#{contractCode})
+    </insert>
+
+</mapper>

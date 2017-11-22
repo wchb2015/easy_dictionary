@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+
+#logging:
+#  pattern:
+#    console: "%d -%msg%n"
+##  path: /Users/wchb/Music/test
+#  file: /Users/wchb/Music/dict.log
+#  level: info
+
