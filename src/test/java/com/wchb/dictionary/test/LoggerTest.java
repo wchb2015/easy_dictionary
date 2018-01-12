@@ -1,5 +1,6 @@
 package com.wchb.dictionary.test;
 
+import com.wchb.dictionary.utils.SinaPriceUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -21,5 +22,11 @@ public class LoggerTest {
 //        2017-07-29 17:40:11.060  INFO 8786 --- [           main] com.wchb.dictionary.test.LoggerTest      : info...
 //        2017-07-29 17:40:11.060 ERROR 8786 --- [           main] com.wchb.dictionary.test.LoggerTest      : error...
 
+    }
+
+    @Test
+    public void test02() {
+
+        System.out.println(SinaPriceUtil.getDailyPrice("JM1801"));
     }
 }

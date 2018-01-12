@@ -5,7 +5,6 @@ import com.wchb.dictionary.mapper.FutureDailyPriceDao;
 import com.wchb.dictionary.utils.HttpResultUtil;
 import com.wchb.dictionary.utils.SinaPriceUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

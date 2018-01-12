@@ -20,22 +20,22 @@ public class FutureDailyPriceDTO {
     private Timestamp date;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Long openingPrice;
+    private Double openingPrice;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Long closingPrice;
+    private Double closingPrice;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Long theHighestPrice;
+    private Double theHighestPrice;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Long theLowestPrice;
+    private Double theLowestPrice;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Long averagePrice;
+    private Double averagePrice;
 
-    private Long ocSpread;
-    private Long hlSpread;
+    private Double ocSpread;
+    private Double hlSpread;
     private Long openInterest;
     private Long volume;
     private Date createdAt;
@@ -43,7 +43,7 @@ public class FutureDailyPriceDTO {
 
     private String contractCode;
 
-    public Long getOcSpread() {
+    public Double getOcSpread() {
         if (openingPrice > closingPrice) {
             ocSpread = openingPrice - closingPrice;
         } else {
@@ -52,7 +52,7 @@ public class FutureDailyPriceDTO {
         return ocSpread;
     }
 
-    public Long getHlSpread() {
+    public Double getHlSpread() {
         return theHighestPrice - theLowestPrice;
     }
 

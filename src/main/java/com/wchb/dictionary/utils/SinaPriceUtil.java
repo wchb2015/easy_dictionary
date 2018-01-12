@@ -61,12 +61,12 @@ public class SinaPriceUtil {
             result.setDate(DateUtil.parseDateStr(priceArr[17]));
 
 //            result.setDate(new Timestamp(System.currentTimeMillis()));
-            result.setOpeningPrice(Long.parseLong(priceArr[2]));
-            result.setClosingPrice(Long.parseLong(priceArr[8]));
+            result.setOpeningPrice(Double.valueOf(priceArr[2]));
+            result.setClosingPrice(Double.valueOf(priceArr[8]));
 
-            result.setTheHighestPrice(Long.parseLong(priceArr[3]));
-            result.setTheLowestPrice(Long.parseLong(priceArr[4]));
-            result.setAveragePrice(Long.parseLong(priceArr[9]));
+            result.setTheHighestPrice(Double.valueOf(priceArr[3]));
+            result.setTheLowestPrice(Double.valueOf(priceArr[4]));
+            result.setAveragePrice(Double.valueOf(priceArr[9]));
 
             result.setOpenInterest(Long.parseLong(priceArr[13]));
             result.setVolume(Long.parseLong(priceArr[14]));
